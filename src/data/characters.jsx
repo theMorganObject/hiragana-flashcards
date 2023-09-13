@@ -26,10 +26,14 @@ export const characters = [
   { e: "ri", j: "り", group: 2 },
   { e: "U", j: "う", group: 3 },
   { e: "Ku", j: "く", group: 3 },
+  { e: "Gu", j: "ぐ", group: 3 }, // bonus
   { e: "Su", j: "す", group: 3 },
+  { e: "Zu", j: "ず", group: 3 }, // bonus
   { e: "Tsu", j: "つ", group: 3 },
   { e: "Nu", j: "ぬ", group: 3 },
   { e: "Fu", j: "ふ", group: 3 },
+  { e: "Bu", j: "ぶ", group: 3 }, // bonus
+  { e: "Pu", j: "ぷ", group: 3 }, // bonus
   { e: "Mu", j: "む", group: 3 },
   { e: "Yu", j: "ゆ", group: 3 },
   { e: "Ru", j: "る", group: 3 },
