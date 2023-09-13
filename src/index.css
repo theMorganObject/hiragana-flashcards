@@ -1,13 +1,57 @@
+/* --- COLORS
+
+- Primary: #9a2ad9
+- Tints:
+#F5EAFB
+#E1BFF4
+#CD95EC
+#B86AE4
+#AE55E1
+#A43FDD
+
+- Shades: 
+#7B22AE
+#6c1d98
+#5c1982
+#3e1157
+#2e0d41
+#1f082b
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333 */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("./fonts/NotoSerifJP-Medium.otf") format("otf"),
+    url("./fonts/NotoSerifJP-Medium.otf") format("otf");
+  /* Add more font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* UNUSED CODE (saved for further development) */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
