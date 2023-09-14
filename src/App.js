@@ -49,6 +49,7 @@ function App() {
   }
 
   function onSelect(e) {
+    setActiveIndex(0);
     setActiveGroup(Number(e.target.value));
   }
 
