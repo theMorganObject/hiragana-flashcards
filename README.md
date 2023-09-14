@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# App Description
+
+This is an open-source flashcard app created by Morgan O'Shaughnessey. It is currently configured to learn the Japanese Hiragana alphabet, but it may be adapted to learn any alphabet.
+
+The foreign-language characters are located in /src/data/characters.jsx. Here, the characters are stored in an object and grouped according to the radio buttons in the UI. Hiragana organizes nicely into 5 groups, which is why there are 5 groups and 5 corrisponding radio buttons.
+
+Should you adapt this app to a different alphabet, I would suggest the following wokflow:
+
+1. Determine the number of groups you will need. If 5, simply update characters.jsx with the new alphabet.
+
+2. If more or less than 5 groups, edit the characters.jsx file to reflect your groups as needed and then sequence the correct number of groups in the radioValues array found on line 11 of /src/components/Controls.jsx;
+
+3. In the "characters" object keys of src/data/characters.tsx, e stands for English and j stands for Japanese. You may wish to update the letters to reflect the languages you are adapting the app for. Should you choose to do so, you will also need to update the abbreviations on line 14 of /src/components/Flashcard.jsx;
+
+Good luck and happy hacking! Drop me a line at developer@theMorganObject.dev if you'd like to say hi, I'd love to hear from you!
+
+Aloha!
+tMO
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
