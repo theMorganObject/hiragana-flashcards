@@ -1,11 +1,12 @@
 fieldset {
   border: none;
+  margin-bottom: 24px;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 8rem;
+  gap: 4.5rem;
   margin-bottom: 24px;
 }
 
@@ -13,12 +14,11 @@ fieldset {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 16px;
 }
 
 input[type="radio"] {
   accent-color: #9a2ad9;
-}
-
-label {
-  color: #1f082b;
+  width: 24px;
+  height: 24px;
 }
