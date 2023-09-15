@@ -13,7 +13,7 @@ export default function Controls({
   return (
     <div>
       <div className={classes.buttons}>
-        <Button handleClick={(e) => onDecrement(e.target)}>Previous</Button>
+        <Button handleClick={(e) => onDecrement(e.target)}>Prev</Button>
         <Button handleClick={(e) => onIncrement(e.target)}>Next</Button>
       </div>
       <div>
