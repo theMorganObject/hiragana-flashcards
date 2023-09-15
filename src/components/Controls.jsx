@@ -8,7 +8,7 @@ export default function Controls({
   onSelect,
   activeGroup,
 }) {
-  const radioValues = [1, 2, 3, 4, 5];
+  const radioValues = [1, 2, 3, 4, 5, 6];
 
   return (
     <div>
