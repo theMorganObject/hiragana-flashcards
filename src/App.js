@@ -10,6 +10,7 @@ const backgroundImages = [
   "/watercolors/3-hakusan.jpg",
   "/watercolors/4-tateyama.jpg",
   "/watercolors/5-goryu.jpg",
+  "/watercolors/6-gassan.jpg",
 ];
 
 function App() {
