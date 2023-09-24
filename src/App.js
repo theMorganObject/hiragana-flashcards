@@ -16,6 +16,9 @@ const backgroundImages = [
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [activeGroup, setActiveGroup] = useState(1);
+  const [filteredCharacters, setFilteredCharacters] = useState(
+    characters.filter((char) => char.group === activeGroup)
+  );
 
   // Data Processing
   const backgroundImage = {
@@ -28,10 +31,7 @@ function App() {
     minHeight: "100vh",
   };
 
-  const filteredCharacters = characters.filter(
-    (char) => char.group === activeGroup
-  );
-
+  // helper functions
   function onDecrement() {
     if (activeIndex === 0) {
       setActiveIndex(filteredCharacters.length - 1);
@@ -40,7 +40,6 @@ function App() {
     setActiveIndex(activeIndex - 1);
   }
 
-  // helper functions
   function onIncrement() {
     if (activeIndex === filteredCharacters.length - 1) {
       setActiveIndex(0);
@@ -49,9 +48,24 @@ function App() {
     setActiveIndex(activeIndex + 1);
   }
 
+  function shuffle() {
+    const currentCharacters = characters.filter(
+      (char) => char.group === activeGroup
+    );
+    const shuffledCharacters = currentCharacters.sort(
+      () => Math.random() - 0.5
+    );
+
+    setFilteredCharacters(shuffledCharacters);
+  }
+
   function onSelect(e) {
     setActiveIndex(0);
     setActiveGroup(Number(e.target.value));
+    const filteredCharacters = characters.filter(
+      (character) => character.group === Number(e.target.value)
+    );
+    setFilteredCharacters(filteredCharacters);
   }
 
   // JSX
@@ -62,6 +76,7 @@ function App() {
         <Controls
           onDecrement={() => onDecrement()}
           onIncrement={() => onIncrement()}
+          shuffle={() => shuffle(filteredCharacters)}
           onSelect={(e) => onSelect(e)}
           activeGroup={activeGroup}
         />

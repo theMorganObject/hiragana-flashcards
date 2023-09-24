@@ -11,4 +11,6 @@
   font-family: NotoSerif, serif;
   font-size: 12rem;
   cursor: pointer;
+
+  user-select: none;
 }
