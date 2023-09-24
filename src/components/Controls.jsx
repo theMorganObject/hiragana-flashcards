@@ -1,3 +1,5 @@
+import { Shuffle } from "@phosphor-icons/react";
+
 import RadioInput from "./RadioInput";
 import Button from "./Button";
 import classes from "./Controls.module.css";
@@ -5,6 +7,7 @@ import classes from "./Controls.module.css";
 export default function Controls({
   onDecrement,
   onIncrement,
+  shuffle,
   onSelect,
   activeGroup,
 }) {
@@ -14,6 +17,9 @@ export default function Controls({
     <div>
       <div className={classes.buttons}>
         <Button handleClick={(e) => onDecrement(e.target)}>Prev</Button>
+        <Button handleClick={() => shuffle()}>
+          <Shuffle />
+        </Button>
         <Button handleClick={(e) => onIncrement(e.target)}>Next</Button>
       </div>
       <div>
