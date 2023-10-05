@@ -6,16 +6,16 @@ import { katakana } from "./data/katakana";
 import classes from "./App.module.css";
 
 const backgroundImages = [
-  "/watercolors/01-fujisan.jpg",
-  "/watercolors/02-asosan.jpg",
-  "/watercolors/03-hakusan.jpg",
-  "/watercolors/04-tateyama.jpg",
-  "/watercolors/05-goryu.jpg",
-  "/watercolors/06-shinano-gawa.jpg",
-  "/watercolors/07-tone-gawa.jpg",
-  "/watercolors/08-ishikari-gawa.jpg",
-  "/watercolors/09-yodo-gawa.jpg",
-  "/watercolors/10-chikugo-gawa.jpg",
+  "/watercolors/01-fujisan.webp",
+  "/watercolors/02-asosan.webp",
+  "/watercolors/03-hakusan.webp",
+  "/watercolors/04-tateyama.webp",
+  "/watercolors/05-goryu.webp",
+  "/watercolors/06-shinano-gawa.webp",
+  "/watercolors/07-tone-gawa.webp",
+  "/watercolors/08-ishikari-gawa.webp",
+  "/watercolors/09-yodo-gawa.webp",
+  "/watercolors/10-chikugo-gawa.webp",
 ];
 
 function App() {
