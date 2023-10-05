@@ -1,0 +1,44 @@
+fieldset {
+  border: none;
+  margin-bottom: 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 24px;
+}
+
+.radioContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.radioButtons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 16px;
+  max-width: 45%;
+  flex-wrap: wrap;
+}
+
+input[type="radio"] {
+  accent-color: #9a2ad9;
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+  fill: #f5eafb;
+}
+
+@media (max-width: 450px) {
+  .buttons {
+    gap: 2rem;
+  }
+}
