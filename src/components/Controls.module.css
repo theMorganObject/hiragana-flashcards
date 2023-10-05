@@ -10,11 +10,19 @@ fieldset {
   margin-bottom: 24px;
 }
 
-.radioButtons {
+.radioContainer {
   display: flex;
+  justify-content: center;
+}
+
+.radioButtons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   gap: 2rem;
   margin-bottom: 16px;
+  max-width: 45%;
+  flex-wrap: wrap;
 }
 
 input[type="radio"] {
@@ -27,4 +35,10 @@ input[type="radio"] {
   height: 32px;
   width: 32px;
   fill: #f5eafb;
+}
+
+@media (max-width: 450px) {
+  .buttons {
+    gap: 2rem;
+  }
 }

@@ -10,8 +10,9 @@ export default function Controls({
   shuffle,
   onSelect,
   activeGroup,
+  switchCharacters,
 }) {
-  const radioValues = [1, 2, 3, 4, 5, 6];
+  const radioValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   return (
     <div>
@@ -22,7 +23,7 @@ export default function Controls({
         </Button>
         <Button handleClick={(e) => onIncrement(e.target)}>Next</Button>
       </div>
-      <div>
+      <div className={classes.radioContainer}>
         <fieldset className={classes.radioButtons}>
           {radioValues.map((value) => (
             <RadioInput
@@ -35,6 +36,9 @@ export default function Controls({
             />
           ))}
         </fieldset>
+      </div>
+      <div className={classes.buttons}>
+        <Button handleClick={() => switchCharacters()}>Switch</Button>
       </div>
     </div>
   );
