@@ -42,9 +42,9 @@ code {
 }
 
 @font-face {
-  font-family: "CustomFont";
-  src: url("./fonts/NotoSerifJP-Medium.otf") format("otf"),
-    url("./fonts/NotoSerifJP-Medium.otf") format("otf");
+  font-family: "NotoSans";
+  src: url("./fonts/NotoSansJP-Regular.ttf") format("truetype"),
+    url("./fonts/NotoSansJP-Regular.ttf") format("truetype");
   /* Add more font formats if necessary */
   font-weight: normal;
   font-style: normal;
