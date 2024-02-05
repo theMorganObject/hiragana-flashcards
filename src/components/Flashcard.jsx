@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import classes from "./Flashcard.module.css";
+import { useEffect, useState } from 'react';
+import classes from './Flashcard.module.css';
 
 export default function Flashcard({ card }) {
   const [isFlipped, setIsFlipped] = useState(false);

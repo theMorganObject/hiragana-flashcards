@@ -28,8 +28,8 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,14 +37,13 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 @font-face {
-  font-family: "NotoSans";
-  src: url("./fonts/NotoSansJP-Regular.ttf") format("truetype"),
-    url("./fonts/NotoSansJP-Regular.ttf") format("truetype");
+  font-family: 'NotoSans';
+  src: url('./fonts/NotoSansJP-Regular.ttf') format('truetype');
   /* Add more font formats if necessary */
   font-weight: normal;
   font-style: normal;
