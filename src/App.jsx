@@ -1,22 +1,29 @@
-import { useState } from "react";
-import Flashcard from "./components/Flashcard";
-import Controls from "./components/Controls";
-import { hiragana } from "./data/hiragana";
-import { katakana } from "./data/katakana";
-import classes from "./App.module.css";
+import { useState, useEffect } from 'react';
+import Flashcard from './components/Flashcard';
+import Controls from './components/Controls';
+import { hiragana } from './data/hiragana';
+import { katakana } from './data/katakana';
+import classes from './App.module.css';
 
 const backgroundImages = [
-  "/watercolors/01-fujisan.webp",
-  "/watercolors/02-asosan.webp",
-  "/watercolors/03-hakusan.webp",
-  "/watercolors/04-tateyama.webp",
-  "/watercolors/05-goryu.webp",
-  "/watercolors/06-shinano-gawa.webp",
-  "/watercolors/07-tone-gawa.webp",
-  "/watercolors/08-ishikari-gawa.webp",
-  "/watercolors/09-yodo-gawa.webp",
-  "/watercolors/10-chikugo-gawa.webp",
+  '/watercolors/01-fujisan.webp',
+  '/watercolors/02-asosan.webp',
+  '/watercolors/03-hakusan.webp',
+  '/watercolors/04-tateyama.webp',
+  '/watercolors/05-goryu.webp',
+  '/watercolors/06-shinano-gawa.webp',
+  '/watercolors/07-tone-gawa.webp',
+  '/watercolors/08-ishikari-gawa.webp',
+  '/watercolors/09-yodo-gawa.webp',
+  '/watercolors/10-chikugo-gawa.webp',
 ];
+
+function preloadImages(images) {
+  images.forEach((image) => {
+    const img = new Image();
+    img.src = process.env.PUBLIC_URL + image;
+  });
+}
 
 function App() {
   const [characters, setActiveCharacters] = useState(hiragana);
@@ -26,16 +33,20 @@ function App() {
     characters.filter((char) => char.group === activeGroup)
   );
 
+  useEffect(() => {
+    preloadImages(backgroundImages);
+  }, []);
+
   // Data Processing
   const backgroundImage = {
     backgroundImage: `url(${process.env.PUBLIC_URL}${
       backgroundImages[activeGroup - 1]
     })`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    minHeight: "100vh",
-    winWidth: "100vw",
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    minHeight: '100vh',
+    winWidth: '100vw',
   };
 
   // helper functions
